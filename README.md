@@ -34,3 +34,53 @@
         （5）提供运行时的应用监控
         （6）与分布式架构和云计算的天然集成
 
+4、利用maven创建工程
+
+  
+     一、pom：
+        
+        <?xml version="1.0" encoding="UTF-8"?>
+        <project xmlns="http://maven.apache.org/POM/4.0.0"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+            <modelVersion>4.0.0</modelVersion>     
+       <groupId>com.xuff</groupId>
+       <artifactId>myspringboot</artifactId>
+       <version>1.0-SNAPSHOT</version>
+       <parent>
+           <groupId>org.springframework.boot</groupId>
+           <artifactId>spring-boot-starter-parent</artifactId>
+           <version>2.0.1.RELEASE</version>
+       </parent>
+   
+       <dependencies>
+           <dependency>
+               <groupId>org.springframework.boot</groupId>
+               <artifactId>spring-boot-starter-web</artifactId>
+           </dependency>
+       </dependencies>
+   
+       <build>
+           <plugins>
+               <plugin>
+                   <groupId>org.springframework.boot</groupId>
+                   <artifactId>spring-boot-maven-plugin</artifactId>
+               </plugin>
+           </plugins>   
+       </build>   
+     </project>
+     
+    
+    二、SpringBoot应用入口类：
+  
+        package com.xuff.myspringboot;
+        import org.springframework.boot.SpringApplication;
+        import org.springframework.boot.autoconfigure.SpringBootApplication;
+        //SpringBoot应用的入口类
+        @SpringBootApplication
+        public class MySpringBootApplication {
+            public static void main(String[] args){
+                //启动SpringBoot应用
+                SpringApplication.run(MySpringBootApplication.class);
+            }
+        }

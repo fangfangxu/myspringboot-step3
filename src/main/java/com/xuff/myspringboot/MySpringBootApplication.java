@@ -1,5 +1,4 @@
 package com.xuff.myspringboot;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 //SpringBoot应用的入口类
