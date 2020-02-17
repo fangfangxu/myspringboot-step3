@@ -132,4 +132,17 @@
 
 9、Springboot允许我们自定义应用配置项，在程序运行时允许动态加载，这为程序提供了
 
-  良好的可维护性；在实际的项目开发中，我们通常将项目的自定义信息放在配置文件中。       
+  良好的可维护性；在实际的项目开发中，我们通常将项目的自定义信息放在配置文件中。
+  
+10、多环境配置
+
+     环境配置文件：
+     （1）Spring Boot可针对不同的环境提供不同的Profile 文件。
+     （2）Profile文件的默认命名格式为application-{env}.yml
+      (3)使用spring.profiles.active选项来指定不同的profile
+
+11、打包与运行
+
+     （1）利用Maven的package命令， 生成可独立运行的Jar包       
+     （2）利用java -jar xxx.jar命令启动Spring Boot应用
+     （3）Jar包可自动加载同目录的application配置文件

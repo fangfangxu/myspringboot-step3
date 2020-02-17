@@ -1,21 +1,22 @@
-debug: true
-
-logging:
- level:
-  root: info
- file: e:/mySpringboot.log
-
-
- spring:
-   datasource:
-     driver-class-name:com.mysql.jdbc.Driver
-     url:mysql://jdbc:localhost:3306/test
-     username:root
-     password:123456
-
-  mall:
-    config:
-      name:爱美商城
-      description:这是一家化妆品特卖商城
-      hot-sales:20
-      show-advert:true
+spring:
+  profiles:
+    active: prd
+#debug: false
+#logging:
+#  level:
+#    root: info
+#  file: e:/mySpringboot.log
+#
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: mysql://jdbc:localhost:3306/test
+#    username: root
+#    password: 123456
+#
+#mall:
+#  config:
+#    name: 爱美商城
+#    description: 这是一家化妆品特卖商城
+#    hot-sales: 20
+#    show-advert: true
