@@ -118,3 +118,18 @@
         spring.datasource.url=jdbc:mysql://localhost:3306/oa
         spring.datasource.username=root
         spring.datasource.password=xiaohui134757898
+
+8、SpringBoot中支持两种格式的配置文件
+
+      （1）属性文件：application.properties
+       (2)YAML格式：application.yml
+          YAML是一种简洁的非标记语言。YAML以数据为中心，使用空白，缩进，分行组织数据，
+          从而使得表示更加简洁易读；
+          
+          YAML语法格式：
+            --标准格式：key:(空格)value     
+            --使用空格代表层级关系，以“ ： ”结束
+
+9、Springboot允许我们自定义应用配置项，在程序运行时允许动态加载，这为程序提供了
+
+  良好的可维护性；在实际的项目开发中，我们通常将项目的自定义信息放在配置文件中。       
